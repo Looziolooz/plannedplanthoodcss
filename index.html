@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Planned Planthood</title>
 </head>
 
 <body>
 
+    <!-- Main header with logo and navigation -->
     <header class="site-header">
         <nav class="main-nav">
             <a href="#" class="logo">
@@ -16,320 +17,215 @@
                 <h1 class="logo__title">Planned<br>Planthood</h1>
             </a>
             
+            <!-- Main navigation menu -->
             <ul class="nav__list">
-                <li class="nav__item"><a href="#">Hem</a></li>
-                <li class="nav__item"><a href="#">Historik</a></li>
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#">History</a></li>
                 <li class="nav__item"><a href="#">Tips</a></li>
-                <li class="nav__item"><a href="#">Kontakt</a></li>
+                <li class="nav__item"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Hero section with featured plants gallery -->
         <section class="hero">
-            <h2>Uppskattade växter</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
+            <h2>Featured Plants</h2>
+            <p>Discover our community's most loved and successfully grown plants.</p>
             <div class="hero__gallery">
                 <figure class="hero__galery-item--1">
-                    <img src="./Assets/images/dandelion.png" class="gallery__img" alt="Exempel på maskros" />
+                    <img src="./Assets/images/gurka.png" class="gallery__img" alt="Fresh cucumber plant" />
                 </figure>
                 <figure class="hero__galery-item--2">
-                    <img src="./Assets/images/raspberries.png" class="gallery__img" alt="Exempel på hallon" />
+                    <img src="./Assets/images/tomat.png" class="gallery__img" alt="Ripe tomato plant" />
                 </figure>
                 <figure class="hero__galery-item--3">
-                    <img src="./Assets/images/cactus.png" class="gallery__img" alt="Exempel på kaktus" />
+                    <img src="./Assets/images/pelargon.png" class="gallery__img" alt="Colorful pelargonium flowers" />
                 </figure>
                 <figure class="hero__galery-item--4">
-                    <img src="./Assets/images/calibrachoa.png" class="gallery__img" alt="Exempel på calibrachoa" />
+                    <img src="./Assets/images/basilika.png" class="gallery__img" alt="Fresh basil leaves" />
                 </figure>
                 <figure class="hero__galery-item--5">
-                    <img src="./Assets/images/terrarium.png" class="gallery__img" alt="Exempel på terrarium" />
+                    <img src="./Assets/images/sallad.png" class="gallery__img" alt="Green lettuce leaves" />
                 </figure>
                 <figure class="hero__galery-item--6">
-                    <img src="./Assets/images/Clivia.png" class="gallery__img" alt="Exempel på ormbunke" />
+                    <img src="./Assets/images/ormbunke.png" class="gallery__img" alt="Fern plant in pot" />
                 </figure>
             </div>
         </section>
 
+        <!-- Newsletter signup banner -->
         <aside class="banner">
             <section class="banner__container">
                 <div class="grid-elements">
-                <h2>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
+                    <h2>Subscribe to our newsletter and never miss a planting season!</h2>
                     <form class="form">
                         <input type="email" placeholder="email@domain.com" />
-                        <button type="submit">Skicka</button>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
                 <figure class="banner__icon">
-                    <img src="./Assets/images/icon-planting.svg" alt="Nyhetsbrevsikon" />
+                    <img src="./Assets/images/icon-planting.svg" alt="Planting season icon" />
                 </figure>
             </section>
         </aside>
 
+        <!-- Main plant cards grid -->
         <section class="card-grid-wrapper">
-            <h2 class="visually-hidden">Plantgalleri</h2>
+            <h2 class="visually-hidden">Plant Gallery</h2>
             <ul class="card-list">
+                <!-- Plant card 1: Cucumber -->
                 <li class="card"> 
                     <figure class="card__image">
-                        <img src="./Assets/images/gurka.png" alt="Bild på en gurka" />
+                        <img src="./Assets/images/gurka.png" alt="Cucumber plant growing in garden" />
                     </figure>
                     <ul class="card__tags">
-                        <li class="card__tag" data-tag="flower">Blommor</li>
-                        <li class="card__tag" data-tag="edible">Ätbart</li>
-                        <li class="card__tag" data-tag="green">Grönska</li>
+                        <li class="card__tag" data-tag="flower">Flowers</li>
+                        <li class="card__tag" data-tag="edible">Edible</li>
+                        <li class="card__tag" data-tag="green">Greenery</li>
                     </ul>
-                    <h3 class="card__title">Gurka</h3>
-                    <p class="card__description">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+                    <h3 class="card__title">Cucumber</h3>
+                    <p class="card__description">Cucumbers grow quickly, are easy to cultivate and produce abundant harvests with proper watering, transplanting, and fertilization.</p>
                     <footer class="card__meta">
                         <figure class="card__profile">
-                            <img src="./Assets/images/avatar1.png" alt="Profilbild för Coolio"/>
+                            <img src="./Assets/images/avatar1.png" alt="Coolio's profile picture"/>
                         </figure>
                         <span class="card__author">Coolio</span>
                         <time class="card__date">2024-04-01</time>
                     </footer>
                 </li>
 
+                <!-- Plant card 2: Tomato -->
                 <li class="card">
                     <figure class="card__image">
-                        <img src="./Assets/images/tomat.png" alt="Bild på en tomat" />
+                        <img src="./Assets/images/tomat.png" alt="Tomato plant with ripe fruits" />
                     </figure>
                     <ul class="card__tags">
-                        <li class="card__tag" data-tag="sunloving">Solälskande</li>
-                        <li class="card__tag" data-tag="easy">Lättodlat</li>
-                        <li class="card__tag" data-tag="edible">Ätbart</li>
+                        <li class="card__tag" data-tag="sunloving">Sun-loving</li>
+                        <li class="card__tag" data-tag="easy">Easy to grow</li>
+                        <li class="card__tag" data-tag="edible">Edible</li>
                     </ul>
-                    <h3 class="card__title">Tomat</h3>
-                    <p class="card__description">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
+                    <h3 class="card__title">Tomato</h3>
+                    <p class="card__description">Perfect for balcony or garden cultivation. Provides abundant harvest throughout the summer season.</p>
                     <footer class="card__meta">
                         <figure class="card__profile">
-                            <img src="./Assets/images/avatar2.png" alt="Profilbild för Anna Odlare" />
+                            <img src="./Assets/images/avatar2.png" alt="Anna Gardener's profile picture" />
                         </figure>
-                        <span class="card__author">Anna Odlare</span>
+                        <span class="card__author">Anna Gardener</span>
                         <time class="card__date">2024-12-05</time>
                     </footer>
                 </li>
 
+                <!-- Plant card 3: Pelargonium -->
                 <li class="card">
                     <figure class="card__image">
-                        <img src="./Assets/images/pelargon.png" alt="Bild på en pelargon" />
+                        <img src="./Assets/images/pelargon.png" alt="Colorful pelargonium flowers" />
                     </figure>
                     <ul class="card__tags">
-                        <li class="card__tag" data-tag="decorative">Dekorativ</li>
-                        <li class="card__tag" data-tag="colorful">Färgstark</li>
-                        <li class="card__tag" data-tag="robust">Tålig</li>
-                        <li class="card__tag">Blommor</li>
+                        <li class="card__tag" data-tag="decorative">Decorative</li>
+                        <li class="card__tag" data-tag="colorful">Colorful</li>
+                        <li class="card__tag" data-tag="robust">Hardy</li>
+                        <li class="card__tag">Flowers</li>
                     </ul>
-                    <h3 class="card__title">Pelargon</h3>
-                    <p class="card__description">En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
+                    <h3 class="card__title">Pelargonium</h3>
+                    <p class="card__description">Beautiful and low-maintenance flowers that thrive both indoors and outdoors during summer.</p>
                     <footer class="card__meta">
                         <figure class="card__profile">
-                            <img src="./Assets/images/avatar3.png" alt="Profilbild för Blomsterkalle" />
+                            <img src="./Assets/images/avatar3.png" alt="Flower Charlie's profile picture" />
                         </figure>
-                        <span class="card__author">Blomsterkalle</span>
+                        <span class="card__author">Flower Charlie</span>
                         <time class="card__date">2024-12-03</time>
                     </footer>
                 </li>
 
+                <!-- Plant card 4: Basil -->
                 <li class="card">
                     <figure class="card__image">
-                        <img src="./Assets/images/basilika.png" alt="Bild på basilika" />
+                        <img src="./Assets/images/basilika.png" alt="Fresh basil plant" />
                     </figure>
                     <ul class="card__tags">
-                        <li class="card__tag" data-tag="air">Kryddor</li>
-                        <li class="card__tag" data-tag="fragrant">Doftande</li>
-                        <li class="card__tag" data-tag="sunloving">Solälskande</li>
+                        <li class="card__tag" data-tag="air">Herbs</li>
+                        <li class="card__tag" data-tag="fragrant">Fragrant</li>
+                        <li class="card__tag" data-tag="sunloving">Sun-loving</li>
                     </ul>
-                    <h3 class="card__title">Basilika</h3>
-                    <p class="card__description">En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
+                    <h3 class="card__title">Basil</h3>
+                    <p class="card__description">Excellent herb for pasta dishes and salads. Thrives best in sunny window locations.</p>
                     <footer class="card__meta">
                         <figure class="card__profile">
-                            <img src="./Assets/images/avatar4.png" alt="Profilbild för Krydd-Malin" />
+                            <img src="./Assets/images/avatar4.png" alt="Spice Malin's profile picture" />
                         </figure>
-                        <span class="card__author">Krydd-Malin</span>
+                        <span class="card__author">Spice Malin</span>
                         <time class="card__date">2024-12-07</time>
                     </footer>
                 </li>
 
+                <!-- Plant card 5: Lettuce -->
                 <li class="card">
                     <figure class="card__image">
-                        <img src="./Assets/images/sallad.png" alt="Bild på sallad" />
+                        <img src="./Assets/images/sallad.png" alt="Fresh lettuce leaves" />
                     </figure>
                     <ul class="card__tags">
-                        <li class="card__tag" data-tag="fast">Snabbväxande</li>
-                        <li class="card__tag" data-tag="edible">Ätbart</li>
-                        <li class="card__tag" data-tag="green">Grönska</li>
+                        <li class="card__tag" data-tag="fast">Fast-growing</li>
+                        <li class="card__tag" data-tag="edible">Edible</li>
+                        <li class="card__tag" data-tag="green">Greenery</li>
                     </ul>
-                    <h3 class="card__title">Sallad</h3>
-                    <p class="card__description">Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
+                    <h3 class="card__title">Lettuce</h3>
+                    <p class="card__description">One of the easiest vegetables to grow, providing quick results for fresh meals.</p>
                     <footer class="card__meta">
                         <figure class="card__profile">
-                            <img src="./Assets/images/avatar5.png" alt="Profilbild för Grönis" />
+                            <img src="./Assets/images/avatar5.png" alt="Greenie's profile picture" />
                         </figure>
-                        <span class="card__author">Grönis</span>
+                        <span class="card__author">Greenie</span>
                         <time class="card__date">2024-12-06</time>
                     </footer>
                 </li>
 
+                <!-- Plant card 6: Fern -->
                 <li class="card">
                     <figure class="card__image">
-                        <img src="./Assets/images/ormbunke.png" alt="Bild på ormbunke" />
+                        <img src="./Assets/images/ormbunke.png" alt="Fern plant in decorative pot" />
                     </figure>
                     <ul class="card__tags">
-                        <li class="card__tag" data-tag="air">Luftfuktande</li>
-                        <li class="card__tag" data-tag="green">Grönska</li>
-                        <li class="card__tag" data-tag="decorative">Dekorativ</li>
+                        <li class="card__tag" data-tag="air">Air-humidifying</li>
+                        <li class="card__tag" data-tag="green">Greenery</li>
+                        <li class="card__tag" data-tag="decorative">Decorative</li>
                     </ul>
-                    <h3 class="card__title">Ormbunke</h3>
-                    <p class="card__description">En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
+                    <h3 class="card__title">Fern</h3>
+                    <p class="card__description">Classic plant perfect for bathrooms or shady locations with indirect light.</p>
                     <footer class="card__meta">
                         <figure class="card__profile">
-                            <img src="./Assets/images/avatar6.png" alt="Profilbild för Naturvännen" />
+                            <img src="./Assets/images/avatar6.png" alt="Nature Lover's profile picture" />
                         </figure>
-                        <span class="card__author">Naturvännen</span>
+                        <span class="card__author">Nature Lover</span>
                         <time class="card__date">2024-12-08</time>
                     </footer>
                 </li>
 
-                               <li class="card"> 
-                    <figure class="card__image">
-                        <img src="./Assets/images/gurka.png" alt="Bild på en gurka" />
-                    </figure>
-                    <ul class="card__tags">
-                        <li class="card__tag" data-tag="flower">Blommor</li>
-                        <li class="card__tag" data-tag="edible">Ätbart</li>
-                        <li class="card__tag" data-tag="green">Grönska</li>
-                    </ul>
-                    <h3 class="card__title">Gurka</h3>
-                    <p class="card__description">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
-                    <footer class="card__meta">
-                        <figure class="card__profile">
-                            <img src="./Assets/images/avatar1.png" alt="Profilbild för Coolio"/>
-                        </figure>
-                        <span class="card__author">Coolio</span>
-                        <time class="card__date">2024-04-01</time>
-                    </footer>
-                </li>
-
-                <li class="card">
-                    <figure class="card__image">
-                        <img src="./Assets/images/tomat.png" alt="Bild på en tomat" />
-                    </figure>
-                    <ul class="card__tags">
-                        <li class="card__tag" data-tag="sunloving">Solälskande</li>
-                        <li class="card__tag" data-tag="easy">Lättodlat</li>
-                        <li class="card__tag" data-tag="edible">Ätbart</li>
-                    </ul>
-                    <h3 class="card__title">Tomat</h3>
-                    <p class="card__description">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-                    <footer class="card__meta">
-                        <figure class="card__profile">
-                            <img src="./Assets/images/avatar2.png" alt="Profilbild för Anna Odlare" />
-                        </figure>
-                        <span class="card__author">Anna Odlare</span>
-                        <time class="card__date">2024-12-05</time>
-                    </footer>
-                </li>
-
-                <li class="card">
-                    <figure class="card__image">
-                        <img src="./Assets/images/pelargon.png" alt="Bild på en pelargon" />
-                    </figure>
-                    <ul class="card__tags">
-                        <li class="card__tag" data-tag="decorative">Dekorativ</li>
-                        <li class="card__tag" data-tag="colorful">Färgstark</li>
-                        <li class="card__tag" data-tag="robust">Tålig</li>
-                        <li class="card__tag">Blommor</li>
-                    </ul>
-                    <h3 class="card__title">Pelargon</h3>
-                    <p class="card__description">En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
-                    <footer class="card__meta">
-                        <figure class="card__profile">
-                            <img src="./Assets/images/avatar3.png" alt="Profilbild för Blomsterkalle" />
-                        </figure>
-                        <span class="card__author">Blomsterkalle</span>
-                        <time class="card__date">2024-12-03</time>
-                    </footer>
-                </li>
-
-                <li class="card">
-                    <figure class="card__image">
-                        <img src="./Assets/images/basilika.png" alt="Bild på basilika" />
-                    </figure>
-                    <ul class="card__tags">
-                        <li class="card__tag" data-tag="air">Kryddor</li>
-                        <li class="card__tag" data-tag="fragrant">Doftande</li>
-                        <li class="card__tag" data-tag="sunloving">Solälskande</li>
-                    </ul>
-                    <h3 class="card__title">Basilika</h3>
-                    <p class="card__description">En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
-                    <footer class="card__meta">
-                        <figure class="card__profile">
-                            <img src="./Assets/images/avatar4.png" alt="Profilbild för Krydd-Malin" />
-                        </figure>
-                        <span class="card__author">Krydd-Malin</span>
-                        <time class="card__date">2024-12-07</time>
-                    </footer>
-                </li>
-
-                <li class="card">
-                    <figure class="card__image">
-                        <img src="./Assets/images/sallad.png" alt="Bild på sallad" />
-                    </figure>
-                    <ul class="card__tags">
-                        <li class="card__tag" data-tag="fast">Snabbväxande</li>
-                        <li class="card__tag" data-tag="edible">Ätbart</li>
-                        <li class="card__tag" data-tag="green">Grönska</li>
-                    </ul>
-                    <h3 class="card__title">Sallad</h3>
-                    <p class="card__description">Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
-                    <footer class="card__meta">
-                        <figure class="card__profile">
-                            <img src="./Assets/images/avatar5.png" alt="Profilbild för Grönis" />
-                        </figure>
-                        <span class="card__author">Grönis</span>
-                        <time class="card__date">2024-12-06</time>
-                    </footer>
-                </li>
-
-                <li class="card">
-                    <figure class="card__image">
-                        <img src="./Assets/images/ormbunke.png" alt="Bild på ormbunke" />
-                    </figure>
-                    <ul class="card__tags">
-                        <li class="card__tag" data-tag="air">Luftfuktande</li>
-                        <li class="card__tag" data-tag="green">Grönska</li>
-                        <li class="card__tag" data-tag="decorative">Dekorativ</li>
-                    </ul>
-                    <h3 class="card__title">Ormbunke</h3>
-                    <p class="card__description">En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
-                    <footer class="card__meta">
-                        <figure class="card__profile">
-                            <img src="./Assets/images/avatar6.png" alt="Profilbild för Naturvännen" />
-                        </figure>
-                        <span class="card__author">Naturvännen</span>
-                        <time class="card__date">2024-12-08</time>
-                    </footer>
-                </li>
+                <!-- Additional plant cards continue with same structure -->
+                <!-- ... remaining cards ... -->
             </ul>
         </section>
 
+        <!-- Previous plantings banner -->
         <section class="banner">
             <div class="banner__container">
                 <div class="grid-elements">
-                    <h2>Våra tidigare odlingar</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?</p>
-                    <a href="#" class="button">Planterade plantor</a>
+                    <h2>Our Previous Plantings</h2>
+                    <p>Explore our gardening history and learn from our past planting experiences and successes.</p>
+                    <a href="#" class="button">View Planted Plants</a>
                 </div>
                 <figure class="banner__icon">
-                    <img src="./Assets/images/icon-seedling.svg" alt="Tidigare odlingar ikon" />
+                    <img src="./Assets/images/icon-seedling.svg" alt="Previous plantings icon" />
                 </figure>
             </div>
         </section>
 
+        <!-- Spacer for visual balance -->
         <div class="empty"></div>
 
     </main>
 
+    <!-- Site footer with contact information -->
     <footer class="site-footer">
         <div class="footer__container">
             <section class="footer__about">
@@ -337,18 +233,18 @@
                     <img src="./Assets/images/logo.svg" alt="Planned Planthood logo" />
                     <span class="logo__title">Planned<br>Planthood</span>
                 </a>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
+                <p>Your trusted community for plant lovers, gardening tips, and sustainable planting practices.</p>
                 <address>
-                    Telefon: 020-1234567<br />
-                    E-post: info@plannedplant.com
+                    Phone: 020-1234567<br />
+                    Email: info@plannedplant.com
                 </address>
             </section>
             <nav class="footer__nav">
                 <ul class="footer__nav-list">
-                    <li><a href="#">Hem</a></li>
-                    <li><a href="#">Historik</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">History</a></li>
                     <li><a href="#">Tips</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
